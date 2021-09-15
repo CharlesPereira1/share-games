@@ -13,7 +13,20 @@ export const ImageIllustration = styled.Image`
   height: ${RFValue(360)}px;
 `;
 
-export const Content = styled.View``;
+export const Content = styled.View`
+  margin-top: -${RFValue(40)}px;
+`;
 
-export const Title = styled.Text``;
-export const SubTitle = styled.Text``;
+export const Title = styled.Text`
+  color: ${({ theme }) => theme.colors.heading};
+  text-align: center;
+  font-size: ${({ theme }) => theme.size.size40};
+  margin-bottom: ${({ theme }) => theme.size.size16};
+`;
+
+export const SubTitle = styled.Text`
+  color: ${({ theme }) => theme.colors.heading};
+  text-align: center;
+  font-size: ${({ theme }) => theme.size.size15};
+  margin-bottom: ${({ theme }) => theme.size.size64};
+`;

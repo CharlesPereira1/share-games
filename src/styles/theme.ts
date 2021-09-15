@@ -30,9 +30,11 @@ export default {
   size: {
     size12: `${RFValue(12)}px`,
     size14: `${RFValue(14)}px`,
+    size15: `${RFValue(15)}px`,
     size16: `${RFValue(16)}px`,
     size18: `${RFValue(18)}px`,
     size20: `${RFValue(20)}px`,
     size40: `${RFValue(40)}px`,
+    size64: `${RFValue(64)}px`,
   },
 };
