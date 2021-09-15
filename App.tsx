@@ -1,17 +1,16 @@
-import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
 
-import SignIn from "./src/screens/SignIn";
+import SignIn from './src/screens/SignIn';
 
-export default function App() {
-  return <SignIn />;
-}
+import theme from './src/styles/theme';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
+const App: React.FC = () => {
+  return (
+    <ThemeProvider theme={theme}>
+      <SignIn />
+    </ThemeProvider>
+  );
+};
+
+export default App;
