@@ -1,7 +1,7 @@
-import React from "react";
-import { Text } from "react-native";
+import React from 'react';
+import { Text } from 'react-native';
 
-import IllustrationImg from "../../assets/illustration.png";
+import IllustrationImg from '../../assets/illustration.png';
 
 import {
   Container,
@@ -9,14 +9,14 @@ import {
   Content,
   Title,
   SubTitle,
-} from "./styles";
+} from './styles';
 
 interface SignInProps {}
 
 const SignIn: React.FC<SignInProps> = () => {
   return (
     <Container>
-      <ImageIllustration source={IllustrationImg} />
+      <ImageIllustration source={IllustrationImg} resizeMode="stretch" />
 
       <Content>
         <Title>
