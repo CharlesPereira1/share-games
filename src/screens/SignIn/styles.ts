@@ -1,4 +1,5 @@
 import styled from 'styled-components/native';
+import { RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View`
   flex: 1;
@@ -9,7 +10,7 @@ export const Container = styled.View`
 
 export const ImageIllustration = styled.Image`
   width: 100%;
-  height: 360px;
+  height: ${RFValue(360)}px;
 `;
 
 export const Content = styled.View``;
