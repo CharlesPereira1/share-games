@@ -1,5 +1,5 @@
 import React from 'react';
-import { StatusBar, Text } from 'react-native';
+import { StatusBar } from 'react-native';
 
 import IllustrationImg from '../../assets/illustration.png';
 
@@ -21,6 +21,7 @@ const SignIn: React.FC<SignInProps> = () => {
         backgroundColor="transparent"
         translucent
       />
+
       <ImageIllustration source={IllustrationImg} resizeMode="stretch" />
 
       <Content>
