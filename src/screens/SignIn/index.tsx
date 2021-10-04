@@ -2,6 +2,7 @@ import React from 'react';
 import { StatusBar } from 'react-native';
 
 import IllustrationImg from '../../assets/illustration.png';
+import ButtonIcon from '../../components/ButtonIcon';
 
 import {
   Container,
@@ -35,6 +36,8 @@ const SignIn: React.FC<SignInProps> = () => {
           Crie grupos para jogar seus games{`\n`}
           favoritos com seus amigos
         </SubTitle>
+
+        <ButtonIcon />
       </Content>
     </Container>
   );
