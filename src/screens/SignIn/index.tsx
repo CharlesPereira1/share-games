@@ -37,7 +37,7 @@ const SignIn: React.FC<SignInProps> = () => {
           favoritos com seus amigos
         </SubTitle>
 
-        <ButtonIcon />
+        <ButtonIcon title="Entrar com Discord" />
       </Content>
     </Container>
   );
