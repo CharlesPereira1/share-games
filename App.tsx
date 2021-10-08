@@ -1,6 +1,7 @@
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import { useFonts } from 'expo-font';
+import AppLoading from 'expo-app-loading';
 import { Inter_400Regular, Inter_500Medium } from '@expo-google-fonts/inter';
 import {
   Rajdhani_500Medium,
@@ -20,6 +21,7 @@ const App: React.FC = () => {
   });
 
   if (!fontsLoaded) {
+    return <AppLoading />;
   }
 
   return (
