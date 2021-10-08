@@ -27,8 +27,7 @@ const SignIn: React.FC<SignInProps> = () => {
 
       <Content>
         <Title>
-          Organize{`\n`}
-          suas jogatinas{`\n`}
+          Conecte-se{`\n`}e organize suas{`\n`}
           facilmente
         </Title>
 
