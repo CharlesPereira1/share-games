@@ -12,6 +12,16 @@ import SignIn from './src/screens/SignIn';
 import theme from './src/styles/theme';
 
 const App: React.FC = () => {
+  const [fontsLoaded] = useFonts({
+    Inter_400Regular,
+    Inter_500Medium,
+    Rajdhani_500Medium,
+    Rajdhani_700Bold,
+  });
+
+  if (!fontsLoaded) {
+  }
+
   return (
     <ThemeProvider theme={theme}>
       <SignIn />
