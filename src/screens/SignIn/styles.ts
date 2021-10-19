@@ -22,6 +22,8 @@ export const Title = styled.Text`
   text-align: center;
   font-size: ${({ theme }) => theme.size.size40};
   margin-bottom: ${({ theme }) => theme.size.size16};
+  font-family: ${({ theme }) => theme.fonts.title700};
+  line-height: ${RFValue(40)}px;
 `;
 
 export const SubTitle = styled.Text`
@@ -29,4 +31,5 @@ export const SubTitle = styled.Text`
   text-align: center;
   font-size: ${({ theme }) => theme.size.size15};
   margin-bottom: ${({ theme }) => theme.size.size64};
+  font-family: ${({ theme }) => theme.fonts.title500};
 `;
