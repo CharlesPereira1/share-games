@@ -1,5 +1,4 @@
 import React from 'react';
-import { StatusBar } from 'react-native';
 
 import IllustrationImg from '../../assets/illustration.png';
 import ButtonIcon from '../../components/ButtonIcon';
@@ -17,12 +16,6 @@ interface SignInProps {}
 const SignIn: React.FC<SignInProps> = () => {
   return (
     <Container>
-      <StatusBar
-        barStyle="light-content"
-        backgroundColor="transparent"
-        translucent
-      />
-
       <ImageIllustration source={IllustrationImg} resizeMode="stretch" />
 
       <Content>

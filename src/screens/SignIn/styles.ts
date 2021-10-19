@@ -32,4 +32,5 @@ export const SubTitle = styled.Text`
   font-size: ${({ theme }) => theme.size.size15};
   margin-bottom: ${({ theme }) => theme.size.size64};
   font-family: ${({ theme }) => theme.fonts.title500};
+  line-height: ${RFValue(25)}px;
 `;
