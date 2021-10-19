@@ -11,6 +11,8 @@ import {
 
 import SignIn from './src/screens/SignIn';
 
+import Background from './src/components/Background';
+
 import theme from './src/styles/theme';
 
 const App: React.FC = () => {
@@ -27,12 +29,14 @@ const App: React.FC = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <StatusBar
-        barStyle="light-content"
-        backgroundColor="transparent"
-        translucent
-      />
-      <SignIn />
+      <Background>
+        <StatusBar
+          barStyle="light-content"
+          backgroundColor="transparent"
+          translucent
+        />
+        <SignIn />
+      </Background>
     </ThemeProvider>
   );
 };
