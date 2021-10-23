@@ -1,5 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
+import Avatar from '../Avatar';
 
 import {
   Container,
@@ -13,6 +14,8 @@ import {
 const Profile: React.FC = () => {
   return (
     <Container>
+      <Avatar urlImage="https://github.com/charlespereira1.png" />
+
       <Wrapper>
         <User>
           <Greeting>Olá,</Greeting>
