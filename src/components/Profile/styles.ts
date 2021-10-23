@@ -18,6 +18,14 @@ export const Greeting = styled.Text`
   margin-right: 5;
 `;
 
-export const UserName = styled.Text``;
+export const UserName = styled.Text`
+  font-family: ${({ theme }) => theme.fonts.title700};
+  font-size: ${RFValue(24)}px;
+  color: ${({ theme }) => theme.colors.heading};
+`;
 
-export const Message = styled.Text``;
+export const Message = styled.Text`
+  font-family: ${({ theme }) => theme.fonts.text400};
+  /* font-size: ${RFValue(24)}px; */
+  color: ${({ theme }) => theme.colors.highlight};
+`;
