@@ -9,7 +9,7 @@ import {
   Rajdhani_700Bold,
 } from '@expo-google-fonts/rajdhani';
 
-import SignIn from './src/screens/SignIn';
+import Routes from './src/routes';
 
 import Background from './src/components/Background';
 
@@ -35,7 +35,7 @@ const App: React.FC = () => {
           backgroundColor="transparent"
           translucent
         />
-        <SignIn />
+        <Routes />
       </Background>
     </ThemeProvider>
   );
