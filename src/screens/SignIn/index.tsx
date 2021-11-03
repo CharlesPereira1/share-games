@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 
 import IllustrationImg from '../../assets/illustration.png';
 import ButtonIcon from '../../components/ButtonIcon';
@@ -14,6 +15,12 @@ import {
 interface SignInProps {}
 
 const SignIn: React.FC<SignInProps> = () => {
+  const { navigate } = useNavigation();
+
+  const handleSignIn = () => {
+    navigate('Home');
+  };
+
   return (
     <Container>
       <ImageIllustration source={IllustrationImg} resizeMode="stretch" />
@@ -29,7 +36,11 @@ const SignIn: React.FC<SignInProps> = () => {
           favoritos com seus amigos
         </SubTitle>
 
-        <ButtonIcon title="Entrar com Discord" />
+        <ButtonIcon
+          title="Entrar com Discord"
+          activeOpacity={0.7}
+          onPress={handleSignIn}
+        />
       </Content>
     </Container>
   );
