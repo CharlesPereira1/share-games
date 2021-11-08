@@ -1,17 +1,17 @@
 import React from 'react';
-import { createStackNavigator } from '@react-navigation/stack';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import SignIn from '../screens/SignIn';
 import Home from '../screens/Home';
 
-const { Navigator, Screen } = createStackNavigator();
+const { Navigator, Screen } = createNativeStackNavigator();
 
 const AuthRoutes: React.FC = () => {
   return (
     <Navigator
-      headerMode="none"
       screenOptions={{
-        cardStyle: {
+        headerShown: false,
+        contentStyle: {
           backgroundColor: 'transparent',
         },
       }}
