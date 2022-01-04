@@ -1,14 +1,17 @@
 import React from 'react';
-import { View, Text } from 'react-native';
 
-import { Container } from './styles';
+import ButtonAdd from '../../components/ButtonAdd';
+import Profile from '../../components/Profile';
+
+import { Container, Header } from './styles';
 
 const Home: React.FC = () => {
   return (
     <Container>
-      <View>
-        <Text>Home</Text>
-      </View>
+      <Header>
+        <Profile />
+        <ButtonAdd />
+      </Header>
     </Container>
   );
 };

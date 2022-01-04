@@ -19,7 +19,7 @@ const Profile: React.FC = () => {
       <Wrapper>
         <User>
           <Greeting>Olá,</Greeting>
-          <UserName>Chares</UserName>
+          <UserName>Charles</UserName>
         </User>
 
         <Message>Hoj é dia de vitória</Message>
