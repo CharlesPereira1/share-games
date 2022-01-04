@@ -18,7 +18,7 @@ const SignIn: React.FC<SignInProps> = () => {
   const { navigate } = useNavigation();
 
   const handleSignIn = () => {
-    navigate({ key: 'Home' });
+    navigate('Home');
   };
 
   return (

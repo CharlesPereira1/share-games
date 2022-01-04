@@ -14,6 +14,7 @@ export const ImageIllustration = styled.Image`
 
 export const Content = styled.View`
   margin-top: -${RFValue(40)}px;
+  padding: 0 ${RFValue(50)}px;
 `;
 
 export const Title = styled.Text`
